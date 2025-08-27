@@ -1,3 +1,15 @@
+@font-face{
+    font-family: "garet";
+    src: url("../fonts/garet/Garet-Book.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "climateCrisis";
+    src: url("../fonts/climateCrisis/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +18,9 @@
 
 body{
     background-color: var(--color-background);
+    font-family: "garet";
+}
+
+p{
+    color: var(--color-text);
 }

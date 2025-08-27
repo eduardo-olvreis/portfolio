@@ -11,13 +11,19 @@
     min-height: 100dvh;
 }
 
-/* header */
+/* tamanho de fonte padrão dos textos no mobile */
+p{
+    font-size: 4vw;
+}
+
+
+/* HEADER */
 header{
-    position: fixed;
+    grid-area: "header";
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10dvh;
+    height: 15dvh;
     width: 100vw;
 }
 header a{
@@ -29,6 +35,7 @@ nav{
     justify-content: end;
     align-items: center;
     flex: 1;
+    padding: 10px;
 }
 
 /* botão para abrir o menu lateral */
@@ -68,15 +75,22 @@ nav{
 nav ul{
     position: absolute;
     list-style: none;
-    top: 11dvh;
+    top: 15dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 50px;
-    background-color: #3C374B;
-    border-radius: 5px;
+    justify-content: start;
+    background-color: var(--color-background);
+    z-index: 3;
+    width: 100vw;
+    height: 100dvh;
+}
+.itemMenu{
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-bottom: 1px #19191d solid;
 }
 .menu {
   transform:scaleY(0);
@@ -91,9 +105,85 @@ nav ul{
 }
 
 /* logo do portfolio */
-#logo{
+.headerLogo{
     max-width: 45%;
+    padding: 10px;
 }
-#logo img{
+.headerLogo img{
     width: 100%;
+    height: auto;
 }
+
+
+/* MAIN */
+main{
+    display: grid;
+    grid-template-areas: 
+        "hero"
+        "sobremim"
+        "projetos"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    margin-top: 50px;
+}
+
+/* hero da página */
+.hero{
+    display: grid;
+    grid-template-areas: 
+        "heroText"
+        "heroImage"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    place-items: center;
+}
+.hero img{
+    grid-area: heroImage;
+    width: 200px;
+}
+.heroText{    
+    grid-area: heroText;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.heroText h1{
+    text-align: start;
+    color: var(--color-textImportant);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    width: 100%;
+    font-family: "climateCrisis";
+}
+.heroText p{
+    text-align: start;
+    line-height: 1.6;
+    width: 100%;
+    margin-top: 1rem;
+    color: #e1daca;
+}
+
+.hero img{
+    width: 70%;
+}
+
+
+
+/* Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px){
+
+};
+
+/* Notebooks e Desktops pequenos (769px - 1279px) */
+@media (min-width: 769px) and (max-width: 1279){
+
+};
+
+/* Desktops (1280px +) */
+@media (min-width: 1280){
+
+};
