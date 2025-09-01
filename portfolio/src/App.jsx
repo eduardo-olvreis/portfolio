@@ -1,11 +1,13 @@
 import Header from "./components/Header"
-import Main from "./components/MainSection"
+import Hero from "./components/Hero"
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Main></Main>
+      <main>
+        <Hero></Hero>
+      </main>
     </div>
   )
 }
