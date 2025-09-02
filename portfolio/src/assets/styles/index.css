@@ -24,7 +24,7 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 15dvh;
-    width: 100vw;
+    width: 100%;
 }
 header a{
     text-decoration: none;
@@ -36,6 +36,7 @@ nav{
     align-items: center;
     flex: 1;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 /* botão para abrir o menu lateral */
@@ -72,36 +73,53 @@ nav{
 }
 
 /* itens do menu lateral */
-nav ul{
-    position: absolute;
-    list-style: none;
-    top: 15dvh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    background-color: var(--color-background);
-    z-index: 3;
-    width: 100vw;
-    height: 85dvh;
-}
-.itemMenu{
-    width: 100vw;
-    text-align: start;
-    padding: 20px;
-    font-size: 1.2rem;
-    border-bottom: 1px #19191d solid;
-}
 .menu {
   transform:scaleY(0);
   transform-origin: top;
   opacity: 0;
-  transition: all 0.4s ease-in-out
-
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  top: 15dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-background);
+  z-index: 3;
+  width: 100%;
+  height: 85dvh;
 }
 .menu.aberto {
   transform: scaleY(1);
   opacity: 1;
+}
+.itensListaMenu{
+    margin-top: 30px;
+    margin-left: 20px;
+    list-style: none;
+}
+.itemMenu{
+    width: 100%;
+    text-align: start;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-family: "climateCrisis";
+    letter-spacing: 0.2rem;
+    color: var(--color-text);
+}
+.iconesListaMenu{
+    margin-bottom: 30px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+    gap: 20px;
+}
+.iconesListaMenu img{
+    width: 100%;
+}
+.iconesListaMenu li{
+    width: 15%;
 }
 
 /* logo do portfolio */
@@ -129,6 +147,7 @@ main{
 
 /* hero */
 .hero{
+    grid-area: hero;
     display: grid;
     grid-template-areas: 
         "heroText"
@@ -154,21 +173,80 @@ main{
     line-height: 1.2;
     width: 100%;
     font-family: "climateCrisis";
-}
-#nomeHeroText{
-    color: var(--color-textImportant);
+    margin-top: 10%;
 }
 .heroText p{
     text-align: start;
-    line-height: 1.6;
     width: 100%;
     margin-top: 1rem;
-    color: #e1daca;
+    font-size: 1.2rem;
+    color: var(--color-text);
 }
 .hero img{
     grid-area: heroImage;
     width: 80%;
-    transform: translateY(-60px); 
+    z-index: -1;
+}
+
+/* ABOUT ME */
+.aboutSection{
+    height: 100dvh;
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.aboutContent{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 70%;
+    border: 2px var(--color-textImportant) solid;
+    border-radius: 10px;
+    padding: 4%;
+}
+.aboutContent h2{
+    color: var(--color-textImportant);
+    font-family: "climateCrisis";
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    font-family: "climateCrisis";
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+}
+.aboutContent p{
+    text-align: start;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+}
+#handImage{
+    rotate: -30deg;
+    width: 30%;
+    max-width: 120px;
+    margin-left: -40px;
+    z-index: 3;
+}
+.aboutCV{
+    width: 72%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#curriculo{
+    padding: 20px;
+    border: 3px var(--color-background) solid;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "pixel";
+    color: var(--color-background);
+    background-color: var(--color-textImportant);
+    
 }
 
 

@@ -1,3 +1,4 @@
+/* DEFAULT FONT */
 @font-face{
     font-family: "garet";
     src: url("../fonts/garet/Garet-Book.woff2") format("woff2");
@@ -5,9 +6,16 @@
     font-style: normal;
 }
 
+/* TITLES FONT */
 @font-face{
     font-family: "climateCrisis";
     src: url("../fonts/climateCrisis/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+/* PIXEL FONT */
+@font-face{
+    font-family: "pixel";
+    src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
 }
 
 *{
@@ -24,4 +32,9 @@ body{
 
 p{
     color: var(--color-text);
+}
+
+.textImportant{
+    color: var(--color-textImportant);
+    font-weight: bolder;
 }

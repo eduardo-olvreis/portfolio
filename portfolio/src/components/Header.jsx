@@ -15,9 +15,17 @@ export default function Header(){
             </div>
             <nav>
                 <ul className={visivel? "menu aberto" : "menu"}>
-                    <li><a href=""><p className="itemMenu">Sobre Mim</p></a></li>
-                    <li><a href=""><p className="itemMenu">Projetos</p></a></li>
-                    <li><a href=""><p className="itemMenu">Contato</p></a></li>
+                    <div className="itensListaMenu">
+                        <li><a href="#about-section"><p className="itemMenu">SOBRE MIM</p></a></li>
+                        <li><a href=""><p className="itemMenu">PROJETOS</p></a></li>
+                        <li><a href=""><p className="itemMenu">CONTATO</p></a></li>
+                    </div>
+                    <div className="iconesListaMenu">
+                        <li><a href="https://www.linkedin.com/in/eduardo-olvreis/" target="__blank"><img src="../src/assets/images/icons/linkedin_Icon.svg" alt="" /></a></li>
+                        <li><a href="https://github.com/eduardo-olvreis" target="__blank"><img src="../src/assets/images/icons/github_icon.svg" alt="" /></a></li>
+                        <li><a href="mailto:eduardo.olvreis@email.com"><img src="../src/assets/images/icons/email_icon.svg" alt="" /></a></li>
+                        <li><a href="https://wa.me/5551994412790"><img src="../src/assets/images/icons/whatsap_icon.svg" alt="" /></a></li>
+                    </div>
                 </ul>
                 <button className={visivel? "botaoFlip aberto" : "botaoFlip"} onClick={toggleMenu}>
                     <div className="front"><img src="../src/assets/images/icons/menu-icon.svg"/></div>
