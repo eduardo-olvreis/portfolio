@@ -25,6 +25,10 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--color-background);
     font-family: "garet";

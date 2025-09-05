@@ -16,15 +16,15 @@ export default function Header(){
             <nav>
                 <ul className={visivel? "menu aberto" : "menu"}>
                     <div className="itensListaMenu">
-                        <li><a href="#about-section"><p className="itemMenu">SOBRE MIM</p></a></li>
-                        <li><a href=""><p className="itemMenu">PROJETOS</p></a></li>
-                        <li><a href=""><p className="itemMenu">CONTATO</p></a></li>
+                        <li><a href="#about-section"><p className="itemMenu" onClick={toggleMenu}>SOBRE MIM</p></a></li>
+                        <li><a href=""><p className="itemMenu" onClick={toggleMenu}>PROJETOS</p></a></li>
+                        <li><a href=""><p className="itemMenu" onClick={toggleMenu}>CONTATO</p></a></li>
                     </div>
                     <div className="iconesListaMenu">
-                        <li><a href="https://www.linkedin.com/in/eduardo-olvreis/" target="__blank"><img src="../src/assets/images/icons/linkedin_Icon.svg" alt="" /></a></li>
-                        <li><a href="https://github.com/eduardo-olvreis" target="__blank"><img src="../src/assets/images/icons/github_icon.svg" alt="" /></a></li>
-                        <li><a href="mailto:eduardo.olvreis@email.com"><img src="../src/assets/images/icons/email_icon.svg" alt="" /></a></li>
-                        <li><a href="https://wa.me/5551994412790"><img src="../src/assets/images/icons/whatsap_icon.svg" alt="" /></a></li>
+                        <li><a href="https://www.linkedin.com/in/eduardo-olvreis/" target="__blank"><img src="../src/assets/images/icons/linkedin_Icon.svg" alt="Link para o meu Linkedin" /></a></li>
+                        <li><a href="https://github.com/eduardo-olvreis" target="__blank"><img src="../src/assets/images/icons/github_icon.svg" alt="Link para o meu GitHub" /></a></li>
+                        <li><a href="mailto:eduardo.olvreis@email.com"><img src="../src/assets/images/icons/email_icon.svg" alt="Link para o meu Email" /></a></li>
+                        <li><a href="https://wa.me/5551994412790"><img src="../src/assets/images/icons/whatsap_icon.svg" alt="Link para o meu Celular" /></a></li>
                     </div>
                 </ul>
                 <button className={visivel? "botaoFlip aberto" : "botaoFlip"} onClick={toggleMenu}>

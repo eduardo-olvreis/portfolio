@@ -1,4 +1,8 @@
 export default function About(){
+    function buttonClick(){
+        window.open("../public/Curriculo.pdf", "_blank")
+    }
+    
     return(
         <section id="about-section" className="aboutSection">
             <div className="aboutContent">
@@ -13,8 +17,8 @@ export default function About(){
                 </p>
             </div>
             <div className="aboutCV">
-                <button id="curriculo">Meu Curriculo</button>
-                <img id="handImage" src="../src/assets/images/handImage.png" alt="" />
+                <button onClick={buttonClick} id="curriculo">Meu Curriculo</button>
+                <img id="handImage" src="../src/assets/images/handImage.png" alt="Imagem de uma mão clicando no botão" />
             </div>
         </section>
     )
