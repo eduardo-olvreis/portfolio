@@ -1,32 +1,6 @@
-import { useState, useEffect } from "react"
+import { useState} from "react"
 
 export default function Header(){
-    
-    //Header aparecer após scrollar para cima
-    const [yScroll, setYScroll] = useState(0)
-    const [showHeader, setShowHeader] = useState(true)
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY
-
-            if (currentScrollY < yScroll){
-                setShowHeader(true)
-            } else{
-                setShowHeader(false)
-            }
-
-            setYScroll(currentScrollY)
-        }
-
-        window.addEventListener("scroll", handleScroll)
-
-        // A função de limpeza DEVE retornar uma função para ser executada depois
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, [yScroll]);
-
 
     //Abrir ou fechar o menu
     const [visivel, setVisivel] = useState(false)
@@ -36,7 +10,7 @@ export default function Header(){
     }
     
     return(
-        <header className={showHeader ? "header--visible" : "header--hidden"}>   
+        <header>   
             <div className="headerLogo">
                 <img src="../src/assets/images/logo.svg" alt="Logo principal do portfolio" />
             </div>

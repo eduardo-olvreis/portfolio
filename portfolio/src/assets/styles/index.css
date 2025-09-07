@@ -21,20 +21,12 @@ p{
 header{
     grid-area: "header";
     background-color: var(--color-background);
-    position: fixed;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 15vh;
     width: 100%;
-    transition: top 0.4s ease-in-out;
-}
-.header--visible{
-    top: 0;
-}
-.header--hidden{
-    top: -150px;
 }
 header a{
     text-decoration: none;
@@ -147,7 +139,6 @@ nav{
 
 /* hero */
 .hero{
-    padding-top: 15vh;
     display: grid;
     grid-template-areas: 
         "heroText"
@@ -156,7 +147,7 @@ nav{
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     place-items: center;
-    height: 100dvh;
+    height: 85dvh;
 }
 .heroText{    
     grid-area: heroText;
