@@ -21,10 +21,11 @@ export default function Header(){
 
         window.addEventListener("scroll", handleScroll)
 
-        return(
-            window.removeEventListener("scroll", handleScroll)
-        )
-    }, [yScroll])
+        // A função de limpeza DEVE retornar uma função para ser executada depois
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [yScroll]);
 
 
     //Abrir ou fechar o menu
@@ -35,7 +36,7 @@ export default function Header(){
     }
     
     return(
-        <header className={showHeader ? "header--visible" : "header-hidden"}>   
+        <header className={showHeader ? "header--visible" : "header--hidden"}>   
             <div className="headerLogo">
                 <img src="../src/assets/images/logo.svg" alt="Logo principal do portfolio" />
             </div>
