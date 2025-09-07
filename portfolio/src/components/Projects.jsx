@@ -1,4 +1,4 @@
-import Carrousel from "./Carrousel"
+import Carousel from "./Carousel"
 
 const meusProjetos = [
     {   // Alma Joias 
@@ -40,7 +40,7 @@ export default function Projects(props){
         <section id="projects-section" className="projectsSection">
             <div className="projectsContent">
                 <h2>MEUS <br />PROJETOS</h2>
-                <Carrousel items={meusProjetos}></Carrousel>
+                <Carousel items={meusProjetos}></Carousel>
             </div>
         </section>
     )

@@ -3,7 +3,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function Carrousel({ items }){
+export default function Carousel({ items }){
 
     const settings = {
         dots: true,
@@ -23,8 +23,8 @@ export default function Carrousel({ items }){
                     return(
                         <div key={item.id}>
                             <img src={item.image} alt={item.alt} />
-                            <button onClick={() => window.open(item.url, "_blank")} id="carrouselButton">{item.name}</button>
-                            <p id="carrouselDescription">{item.description} <br /><br /></p>
+                            <button onClick={() => window.open(item.url, "_blank")} id="carouselButton">{item.name}</button>
+                            <p id="carouselDescription">{item.description} <br /><br /></p>
                         </div>
                     )
                 })}

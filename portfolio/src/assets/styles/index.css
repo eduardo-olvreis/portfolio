@@ -265,7 +265,7 @@ nav{
     width: 100%;
     border-radius: 10px;
 }
-#carrouselButton{
+#carouselButton{
     margin-top: 20px;
     margin-bottom: 10px;
     padding: 10px;
@@ -277,7 +277,7 @@ nav{
     color: var(--color-background);
     background-color: var(--color-textImportant);
 }
-#carrouselDescription{
+#carouselDescription{
     text-align: start;
     width: 100%;
     font-size: clamp(1.1rem, 4vw, 1.4rem);
