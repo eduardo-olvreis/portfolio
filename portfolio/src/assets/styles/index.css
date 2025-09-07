@@ -296,7 +296,7 @@ nav{
 
 /* Contact */
 .contactSection{
-    margin-top: 20dvh;
+    margin-top: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
