@@ -18,7 +18,7 @@ export default function Header(){
                     <div className="itensListaMenu">
                         <li><a href="#about-section"><p className="itemMenu" onClick={toggleMenu}>SOBRE MIM</p></a></li>
                         <li><a href="#projects-section"><p className="itemMenu" onClick={toggleMenu}>PROJETOS</p></a></li>
-                        <li><a href=""><p className="itemMenu" onClick={toggleMenu}>CONTATO</p></a></li>
+                        <li><a href="#contact-section"><p className="itemMenu" onClick={toggleMenu}>CONTATO</p></a></li>
                     </div>
                     <div className="iconesListaMenu">
                         <li><a href="https://www.linkedin.com/in/eduardo-olvreis/" target="__blank"><img src="../src/assets/images/icons/linkedin_Icon.svg" alt="Link para o meu Linkedin" /></a></li>

@@ -12,8 +12,10 @@ function App() {
         <Hero></Hero>
         <About></About>
         <Projects></Projects>
-        <Contact></Contact>
       </main>
+      <footer>
+        <Contact></Contact>
+      </footer>
     </div>
   )
 }
