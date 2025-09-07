@@ -25,7 +25,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 15vh;
+    height: 15svh;
     width: 100%;
 }
 header a{
@@ -81,14 +81,14 @@ nav{
   opacity: 0;
   transition: all 0.4s ease-in-out;
   position: absolute;
-  top: 15dvh;
+  top: 15svh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--color-background);
   z-index: 3;
   width: 100%;
-  height: 85dvh;
+  height: 85svh;
 }
 .menu.aberto {
   transform: scaleY(1);
@@ -147,7 +147,7 @@ nav{
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     place-items: center;
-    height: 85dvh;
+    height: 85svh; 
 }
 .heroText{    
     grid-area: heroText;
@@ -181,7 +181,7 @@ nav{
 
 /* ABOUT ME */
 .aboutSection{
-    min-height: 100dvh;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,7 +237,7 @@ nav{
 
 /* PROJECTS */
 .projectsSection{
-    min-height: 100dvh;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,7 +261,7 @@ nav{
 }
 .slider-container {
     margin-top:20px;
-    width: 61dvw;
+    width: 61svw;
 }
 .slick-slide img{
     width: 100%;
@@ -298,7 +298,7 @@ nav{
 
 /* Contact */
 .contactSection{
-    margin-top: 20vh;
+    margin-top: 20svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -349,14 +349,14 @@ nav{
 /* Tablets (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px){
 
-};
+}
 
 /* Notebooks e Desktops pequenos (769px - 1279px) */
-@media (min-width: 769px) and (max-width: 1279){
+@media (min-width: 769px) and (max-width: 1279px){
 
-};
+}
 
 /* Desktops (1280px +) */
-@media (min-width: 1280){
+@media (min-width: 1280px){
 
-};
+}
