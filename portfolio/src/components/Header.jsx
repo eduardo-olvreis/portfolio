@@ -17,7 +17,7 @@ export default function Header(){
                 <ul className={visivel? "menu aberto" : "menu"}>
                     <div className="itensListaMenu">
                         <li><a href="#about-section"><p className="itemMenu" onClick={toggleMenu}>SOBRE MIM</p></a></li>
-                        <li><a href=""><p className="itemMenu" onClick={toggleMenu}>PROJETOS</p></a></li>
+                        <li><a href="#projects-section"><p className="itemMenu" onClick={toggleMenu}>PROJETOS</p></a></li>
                         <li><a href=""><p className="itemMenu" onClick={toggleMenu}>CONTATO</p></a></li>
                     </div>
                     <div className="iconesListaMenu">
