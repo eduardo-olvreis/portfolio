@@ -19,6 +19,14 @@ const meusProjetos = [
     },
     {
         id: 3,
+        name: "Shopping Cart",
+        description: "Carrinho de compras funcional em React, desenvolvido para praticar estados, props e estilização com CSS Modules.",
+        image: "../src/assets/images/projects/shoppingcartImage.svg",
+        alt: "Imagem do projeto shopping cart",
+        url: "https://github.com/eduardo-olvreis/shopping-cart-exercise"
+    },
+    {
+        id: 4,
         name: "Calculadora",
         description: "Uma calculadora funcional, desenvolvida como meu primeiro projeto para aprendizado em HTML, CSS e JavaScript.",
         image: "../src/assets/images/projects/calculatorImage.svg",
@@ -26,7 +34,7 @@ const meusProjetos = [
         url: "https://github.com/eduardo-olvreis/calculadora-js"
     },
     {
-        id: 4,
+        id: 5,
         name: "Task List",
         description: "Lista de tarefas feita para praticar HTML, CSS e JavaScript. Foco em manipulação de elementos da página e criação de uma interface intuitiva.",
         image: "../src/assets/images/projects/tasklistImage.svg",
