@@ -278,6 +278,7 @@ nav{
     font-family: "pixel";
     color: var(--color-background);
     background-color: var(--color-textImportant);
+    font-size: 10px;
 }
 #carouselDescription{
     text-align: start;

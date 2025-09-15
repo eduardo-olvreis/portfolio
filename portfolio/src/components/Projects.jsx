@@ -27,6 +27,14 @@ const meusProjetos = [
     },
     {
         id: 4,
+        name: "Conversor de Moedas",
+        description: "Conversor de moedas em React, criado para praticar estados, formulários, eventos e consumo de dados externos.",
+        image: "../src/assets/images/projects/conversorImage.svg",
+        alt: "Imagem do projeto Conversor de Moedas",
+        url: "https://github.com/eduardo-olvreis/currency-converter-exercise"
+    },
+    {
+        id: 5,
         name: "Calculadora",
         description: "Uma calculadora funcional, desenvolvida como meu primeiro projeto para aprendizado em HTML, CSS e JavaScript.",
         image: "../src/assets/images/projects/calculatorImage.svg",
@@ -34,7 +42,7 @@ const meusProjetos = [
         url: "https://github.com/eduardo-olvreis/calculadora-js"
     },
     {
-        id: 5,
+        id: 6,
         name: "Task List",
         description: "Lista de tarefas feita para praticar HTML, CSS e JavaScript. Foco em manipulação de elementos da página e criação de uma interface intuitiva.",
         image: "../src/assets/images/projects/tasklistImage.svg",
