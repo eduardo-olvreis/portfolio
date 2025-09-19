@@ -11,7 +11,9 @@ export default function Header(){
     return(
         <header>   
             <div className="headerLogo">
-                <img src="../src/assets/images/logo.svg" alt="Logo principal do portfolio" />
+                <h1>
+                    <img src="../src/assets/images/logo.svg" alt="Portfólio Eduardo Reis" />
+                </h1>
             </div>
             <nav>
                 <ul className={visivel? "menu aberto" : "menu"}>

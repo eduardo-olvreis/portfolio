@@ -18,6 +18,10 @@
     src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;

@@ -166,7 +166,7 @@ main{
     justify-content: center;
     width: 70%;
 }
-.heroText h1{
+.heroText h2{
     text-align: start;
     color: var(--color-textImportant);
     font-size: 1.5rem;
