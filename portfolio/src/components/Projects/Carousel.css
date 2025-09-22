@@ -6,6 +6,8 @@
     width: 100%;
     border-radius: 10px;
 }
+
+/* Botão com o nome do projeto */
 #carouselButton{
     margin-top: 20px;
     margin-bottom: 10px;
@@ -19,16 +21,37 @@
     background-color: var(--color-textImportant);
     font-size: 10px;
 }
+
+/* Descrição do projeto */
 #carouselDescription{
     text-align: start;
     width: 100%;
     font-size: clamp(1.1rem, 4vw, 1.4rem);
     color: var(--color-text);
 }
+
+/* Botões para alterar o projeto */
 .slider-container .slick-dots li button:before {
   color: var(--color-textImportant);
   font-size: 10px; 
 }
 .slider-container .slick-dots li.slick-active button:before {
   color: var(--color-textImportant);
+}
+
+/* Flechas para alterar o projeto */
+.slider-container .slick-next::before{
+  color: var(--color-textImportant);
+}
+.slider-container .slick-next{
+  right: -20%;
+  top: 48%;
+}
+
+.slider-container .slick-prev::before{
+  color: var(--color-textImportant);
+}
+.slider-container .slick-prev{
+  left: -20%;
+  top: 48%;
 }
