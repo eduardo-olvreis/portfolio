@@ -1,7 +1,9 @@
+import style from "./Hero.module.css"
+
 export default function Hero(){
     return(
-        <div className="hero">
-            <div className="heroText">
+        <div className={style.containerHero}>
+            <div className={style.text}>
                 <h2>
                     <span>
                         F R O N T E N D

@@ -1,0 +1,148 @@
+/* ESTILOS PADRÃO (MOBILE  0 - 480px) */
+
+/* Container do Header */
+.containerHeader{
+    grid-area: "header";
+    background-color: var(--color-background);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15svh;
+    width: 100%;
+
+    & a{
+        text-decoration: none;
+        color: var(--color-text);
+    }
+}
+
+/* Logo */
+.logo{
+    max-width: 45%;
+    padding: 10px;
+    
+    & img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Container do Menu */
+.containerMenu{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Botão do Menu */
+.botao{
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    perspective: 600px;
+    transition: transform 0.4s ease-in-out;
+    transform-style: preserve-3d;
+    background-color: var(--color-background);
+    border: none;
+    outline: none;
+}
+.botaoAberto{
+    transform: rotateY(180deg);
+}
+.front, .back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+    & img{
+        width: 80%;
+        height: 80%;   
+    }
+}
+.back{
+    transform: rotateY(180deg);
+}
+
+/* Conteudo do Menu */
+.menu{
+    transform:scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    top: 15svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-background);
+    z-index: 3;
+    width: 100%;
+    height: 85svh; 
+}
+.menuAberto{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+/* Itens do menu */
+.containerItens{
+    margin-top: 30px;
+    margin-left: 20px;
+    list-style: none;
+
+    & p{    /* Cada item do menu */
+        width: 100%;
+        text-align: start;
+        padding: 20px;
+        font-size: 1.2rem;
+        font-family: "climateCrisis";
+        letter-spacing: 0.2rem;
+        color: var(--color-text);
+    }
+}
+
+/* Icones do menu */
+.containerIcones{
+    margin-bottom: 30px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+    gap: 20px;
+
+    & img{
+        width: 100%;
+    }
+
+    & li{
+        width: 15%;
+    }
+}
+
+
+
+/* Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px){
+
+}
+
+/* Notebooks e Desktops pequenos (769px - 1279px) */
+@media (min-width: 769px) and (max-width: 1279px){
+
+}
+
+/* Desktops (1280px +) */
+@media (min-width: 1280px){
+
+}

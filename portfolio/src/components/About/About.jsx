@@ -1,11 +1,13 @@
+import style from "./About.module.css"
+
 export default function About(){
     function buttonClick(){
         window.open("../public/Curriculo.pdf", "_blank")
     }
     
     return(
-        <section id="about-section" className="aboutSection">
-            <div className="aboutContent">
+        <section id="about-section" className={style.containerAbout}>
+            <div className={style.content}>
                 <h2>                   
                     SOBRE MIM
                 </h2>
@@ -16,9 +18,9 @@ export default function About(){
                     Gosto de transformar ideias em soluções práticas e funcionais, criando interfaces que unem simplicidade, performance e boa experiência ao usuário.
                 </p>
             </div>
-            <div className="aboutCV">
-                <button onClick={buttonClick} id="curriculo">Meu Curriculo</button>
-                <img id="handImage" src="../src/assets/images/handImage.png" alt="Imagem de uma mão clicando no botão" />
+            <div className={style.curriculum}>
+                <button onClick={buttonClick}>Meu Curriculo</button>
+                <img src="../src/assets/images/handImage.png" alt="Imagem de uma mão clicando no botão" />
             </div>
         </section>
     )

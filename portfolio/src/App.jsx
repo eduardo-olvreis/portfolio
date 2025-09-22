@@ -1,13 +1,15 @@
-import Header from "./components/Header"
-import Hero from "./components/Hero"
-import About from "./components/About"
-import Projects from "./components/Projects"
-import Contact from "./components/Contact"
+import Header from "./components/Header/Header.jsx"
+import Hero from "./components/Hero/Hero.jsx"
+import About from "./components/About/About.jsx"
+import Projects from "./components/Projects/Projects.jsx"
+import Contact from "./components/Contact/Contact.jsx"
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <header>
+        <Header></Header>
+      </header>
       <main>
         <Hero></Hero>
         <About></About>

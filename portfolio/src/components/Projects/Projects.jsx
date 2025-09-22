@@ -1,4 +1,5 @@
 import Carousel from "./Carousel"
+import style from "./Projects.module.css"
 
 const meusProjetos = [
     {   // Alma Joias 
@@ -51,10 +52,10 @@ const meusProjetos = [
     }
 ]
 
-export default function Projects(props){
+export default function Projects(){
     return(
-        <section id="projects-section" className="projectsSection">
-            <div className="projectsContent">
+        <section id="projects-section" className={style.container}>
+            <div className={style.content}>
                 <h2>MEUS <br />PROJETOS</h2>
                 <Carousel items={meusProjetos}></Carousel>
             </div>

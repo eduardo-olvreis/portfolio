@@ -1,27 +1,23 @@
-/* DEFAULT FONT */
+/* FONTS */
+/* Default Font */
 @font-face{
     font-family: "garet";
     src: url("../fonts/garet/Garet-Book.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
-
-/* TITLES FONT */
+/* Title Font */
 @font-face{
     font-family: "climateCrisis";
     src: url("../fonts/climateCrisis/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
 }
-
-/* PIXEL FONT */
+/* Pixel Font */
 @font-face{
     font-family: "pixel";
     src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
+/* DEFINIÇÕES PADRÕES DA PÁGINA */
 *{
     margin: 0;
     padding: 0;
@@ -45,4 +41,36 @@ p{
 .textImportant{
     color: var(--color-textImportant);
     font-weight: bolder;
+}
+
+/* ESTILOS PADRÃO (MOBILE  0 - 480px) */
+.App{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+p{
+    font-size: 4vw;
+}
+
+
+/* Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px){
+
+}
+
+/* Notebooks e Desktops pequenos (769px - 1279px) */
+@media (min-width: 769px) and (max-width: 1279px){
+
+}
+
+/* Desktops (1280px +) */
+@media (min-width: 1280px){
+
 }
