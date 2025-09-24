@@ -10,12 +10,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     place-items: center;
-    height: 85svh;
+    min-height: 85svh;
 
     & img{
         grid-area: image;
         width: 80%;
-        z-index: -1;
     }
 }
 

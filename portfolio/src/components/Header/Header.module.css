@@ -19,7 +19,7 @@
 
 /* Logo */
 .logo{
-    max-width: 45%;
+    width: clamp(130px, 15vw, 300px);
     padding: 10px;
     
     & img{
@@ -36,6 +36,11 @@
     flex: 1;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+/* Menu fixo em resoluções maiores */
+.menuFixed{
+    display: none;
 }
 
 /* Botão do Menu */
@@ -119,10 +124,10 @@
     align-items: center;
     justify-content: start;
     list-style: none;
-    gap: 20px;
+    gap: 10px;
 
     & img{
-        width: 100%;
+        width: 80%;
     }
 
     & li{
@@ -132,15 +137,48 @@
 
 
 
-/* Tablets (481px - 768px) */
-@media (min-width: 481px) and (max-width: 768px){
+/* Tablet (769px - 1279px) */
+@media (min-width: 768px) and (max-width: 1279px){
+    /* Menu e botão para mobile somem em resoluções maiores */
+    .menu{
+        display: none;
+    }
+    .botao{
+        display: none;
+    }
+    
+    /* Container do Menu fixado */
+    .containerMenu{
+        justify-content: center;
+        margin-bottom: 0;
+        border: 1px red solid;
+    }
 
+    .logo{
+        min-width: 25%;
+        max-width: 40%;
+    }
+
+    /* Menu fixado no header */
+    .menuFixed{
+        display: flex;
+        width: 100%;
+        list-style: none;
+        gap: 30px;
+
+        & p{
+            text-align: start;
+            font-family: "climateCrisis";
+            font-size: 1.3rem;
+            transition: all ease-in-out 0.2s;
+        }
+        & p:hover{
+            color: var(--color-textImportant);
+        }
+    }
 }
 
-/* Notebooks e Desktops pequenos (769px - 1279px) */
-@media (min-width: 769px) and (max-width: 1279px){
 
-}
 
 /* Desktops (1280px +) */
 @media (min-width: 1280px){
