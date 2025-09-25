@@ -13,9 +13,7 @@ export default function Header(){
     return( 
         <div className={style.containerHeader}>
             <div className={style.logo}>
-                <h1>
-                    <img src="../src/assets/images/logo.svg" alt="Portfólio Eduardo Reis" />
-                </h1>
+                <img src="../src/assets/images/logo.svg" alt="Portfólio Eduardo Reis" />
             </div>
             <nav className={style.containerMenu}>
                 {/* Menu fixado no header em resoluções maiores */}

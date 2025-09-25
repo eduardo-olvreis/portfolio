@@ -10,6 +10,7 @@
     justify-content: space-between;
     height: 15svh;
     width: 100%;
+    border: 1px red solid;
 
     & a{
         text-decoration: none;
@@ -20,11 +21,11 @@
 /* Logo */
 .logo{
     width: clamp(130px, 15vw, 300px);
-    padding: 10px;
-    
+
     & img{
         width: 100%;
         height: auto;
+        display: block;
     }
 }
 
@@ -135,10 +136,8 @@
     }
 }
 
-
-
-/* Tablet (769px - 1279px) */
-@media (min-width: 768px) and (max-width: 1279px){
+/* Tablets ( 768px - 991px ) */
+@media (min-width: 768px) {
     /* Menu e botão para mobile somem em resoluções maiores */
     .menu{
         display: none;
@@ -151,12 +150,6 @@
     .containerMenu{
         justify-content: center;
         margin-bottom: 0;
-        border: 1px red solid;
-    }
-
-    .logo{
-        min-width: 25%;
-        max-width: 40%;
     }
 
     /* Menu fixado no header */
@@ -178,9 +171,21 @@
     }
 }
 
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+}
+
+/* xl - Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
 
 
-/* Desktops (1280px +) */
-@media (min-width: 1280px){
 
+/* Celular deitado */
+@media (orientation: landscape){
+    .logo{
+        width: 20%;
+    }
 }

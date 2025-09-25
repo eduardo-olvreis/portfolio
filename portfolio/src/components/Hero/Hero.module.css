@@ -1,4 +1,4 @@
-/* ESTILOS PADRÃO (MOBILE  0 - 480px) */
+/* ESTILOS PADRÃO (MOBILE  0 - 576px) */
 
 /* Container do Hero */
 .containerHero{
@@ -36,6 +36,10 @@
         margin-top: 10%;
     }
 
+    & .quebraLinha{
+        display: block;
+    }
+
     & p{
         text-align: start;
         width: 100%;
@@ -45,14 +49,20 @@
     }
 }
 
-
-/* Tablets (481px - 768px) */
-@media (min-width: 481px) and (max-width: 768px){
-
+/* Regra específica para dispositivos DEITADOS (landscape) */
+@media (orientation: landscape) {
+    .containerHero {
+        min-height: 100svh;
+        grid-template-areas: "text image";
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 20px;
+        padding: 0 5%;
+    }
 }
 
-/* Notebooks e Desktops pequenos (769px - 1279px) */
-@media (min-width: 769px) and (max-width: 1279px){
+/* Tablet ( 768px - 991px )*/
+@media (min-width: 768px){
 
 }
 
