@@ -10,7 +10,6 @@
     justify-content: space-between;
     height: 15svh;
     width: 100%;
-    border: 1px red solid;
 
     & a{
         text-decoration: none;
@@ -138,12 +137,18 @@
 
 /* Tablets ( 768px - 991px ) */
 @media (min-width: 768px) {
+
     /* Menu e botão para mobile somem em resoluções maiores */
     .menu{
         display: none;
     }
     .botao{
         display: none;
+    }
+
+    /* Deixar responsivo nas proximas atualizações */
+    .logo{
+        width: 150px;
     }
     
     /* Container do Menu fixado */
@@ -155,6 +160,7 @@
     /* Menu fixado no header */
     .menuFixed{
         display: flex;
+        justify-content: center;
         width: 100%;
         list-style: none;
         gap: 30px;
@@ -169,11 +175,6 @@
             color: var(--color-textImportant);
         }
     }
-}
-
-/* lg - Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    
 }
 
 /* xl - Extra large devices (large desktops, 1200px and up) */

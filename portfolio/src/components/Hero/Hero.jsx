@@ -9,7 +9,9 @@ export default function Hero(){
                 </h2>
                 <p>Me chamo <span className="textImportant">Eduardo Reis</span> e desenvolvo soluções frontend modernas, unindo performance e usabilidade.</p>
             </div>
-            <img src="../src/assets/images/heroImage.svg" alt="Imagem de um computador antigo com a minha logo" />
+            <div className={style.containerImage}>
+                <img src="../src/assets/images/heroImage.svg" alt="Imagem de um computador antigo com a minha logo" />
+            </div>
         </div>
     )
 }

@@ -55,20 +55,19 @@ p{
     min-height: 100vh;
 }
 
-/* Celular em paisagem ( 576px - 767px ) */
-@media (min-width: 576px){
 
-}
-
-/* Tablet ( 768px - 991px )*/
+/* Tablet ( 768px - 1279)*/
 @media (min-width: 768px){
 
+    /* Alteração global no tamanho das fontes no tablet */
+    p{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
 }
 
-/* Tablet em paisagem ( 992px - 1199px ) */
-@media (min-width: 992px){
-
-}
 
 /* Desktops */
 @media (min-width: 1200px){
