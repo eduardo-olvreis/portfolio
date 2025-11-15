@@ -68,14 +68,16 @@
 /* Tablet ( 768px - 1279px )*/
 @media (min-width: 768px){
 
-    .text{
-
+    .text{  
         width: 80%;
-
+        
         /* Titulo do hero sem quebra de linha */
         & .quebraLinha, h2{
-            display: flex;
+            display: block;
             gap: 30px;
+        }
+        & p, h2{
+            margin-left: 6rem;
         }
     }
 

@@ -2,7 +2,7 @@
     --color-background :#302f3b;
     --color-text: #e1daca;
     --color-textImportant: #ff6d4d;
-    --font-size-p: 1.2rem;
+    --font-size-p: 1.1rem;
     --font-size-h2: 1.5rem;
 }
 
@@ -10,7 +10,7 @@
 /* Tablet */
 @media (min-width: 768px){
     :root{
-        --font-size-p: 1.5rem;
-        --font-size-h2: 1.8rem
+        --font-size-p: 1.7rem;
+        --font-size-h2: 2rem
     }
 }

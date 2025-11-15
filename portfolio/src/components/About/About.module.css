@@ -21,7 +21,7 @@
     & h2{
         color: var(--color-textImportant);
         font-family: "climateCrisis";
-        font-size: clamp(1.3rem, 5vw, 1.5rem);
+        font-size: var(--font-size-h2);
         line-height: 1.2;
         letter-spacing: 0.2rem;
         font-weight: 300;
@@ -31,7 +31,7 @@
         text-align: start;
         width: 100%;
         margin-top: 1rem;
-        font-size: clamp(1.1rem, 4vw, 1.4rem);
+        font-size: var(--font-size-p);
         color: var(--color-text);
     }
 }
@@ -58,20 +58,31 @@
     & img{  /* Imagem da mão clicando no curriculo */
         rotate: -30deg;
         width: 20%;
-        max-width: 120px;
         margin-left: -30px;
         z-index: 3;
     }
 }
 
 
-/* Celular em paisagem ( 576px - 767px ) */
-@media (min-width: 576px){
-
-}
-
 /* Tablet ( 768px - 991px )*/
 @media (min-width: 768px){
+
+    .content p{
+        margin-top: 2rem;
+    }
+
+    .curriculum{
+        padding: 3%;
+        & button{
+            font-size: var(--font-size-p);
+            text-align: center;
+        }
+        
+        & img{
+            width: 17%;
+            margin-left: -32px;
+        }
+    }
 
 }
 
