@@ -5,7 +5,7 @@ const meusProjetos = [
     {   // Alma Joias 
         id: 1,
         name: "Alma Joias",
-        description: "Website para a Alma Joias em desenvolvimento. O projeto é um site de e-commerce e catálogo de produtos, focado em um layout limpo e responsivo, feito com HTML, CSS e JavaScript.",
+        description: "E-commerce e catálogo da Alma Joias, criado com layout limpo, responsivo e navegação simples.",
         image: "../src/assets/images/projects/almaImage.svg",
         alt: "Imagem do projeto Alma Joias",
         url: "https://github.com/eduardo-olvreis/projeto-alma-joias"
@@ -13,7 +13,7 @@ const meusProjetos = [
     {
         id: 2,
         name: "Portfólio",
-        description: "Este é o próprio site, desenvolvido em React como uma Single-Page Application (SPA) para demonstrar minhas habilidades na criação de interfaces dinâmicas e responsivas.",
+        description: "O próprio site, desenvolvido em React como SPA, mostrando uma interface dinâmica e responsiva.",
         image: "../src/assets/images/projects/portfolioImage.svg",
         alt: "Imagem do projeto portfólio",
         url: "https://github.com/eduardo-olvreis/portfolio"
@@ -45,7 +45,7 @@ const meusProjetos = [
     {
         id: 6,
         name: "Task List",
-        description: "Lista de tarefas feita para praticar HTML, CSS e JavaScript. Foco em manipulação de elementos da página e criação de uma interface intuitiva.",
+        description: "Lista de tarefas em HTML, CSS e JavaScript, focada na manipulação do DOM e em uma interface intuitiva.",
         image: "../src/assets/images/projects/tasklistImage.svg",
         alt: "Imagem do projeto Task List",
         url: "https://github.com/eduardo-olvreis/task-list-js"
@@ -56,7 +56,7 @@ export default function Projects(){
     return(
         <section id="projects-section" className={style.container}>
             <div className={style.content}>
-                <h2>MEUS <br />PROJETOS</h2>
+                <h2>MEUS PROJETOS</h2>
                 <Carousel items={meusProjetos}></Carousel>
             </div>
         </section>

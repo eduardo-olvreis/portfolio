@@ -55,3 +55,9 @@
   left: -20%;
   top: 48%;
 }
+
+
+/* Descrição do item */
+#carouselDescription, #carouselButton{
+  font-size: var(--font-size-p);
+}

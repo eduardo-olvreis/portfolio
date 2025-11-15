@@ -25,7 +25,7 @@ export default function Carousel({ items }){
                         <div key={item.id}>
                             <img src={item.image} alt={item.alt} />
                             <button onClick={() => window.open(item.url, "_blank")} id="carouselButton">{item.name}</button>
-                            <p id="carouselDescription">{item.description} <br /><br /></p>
+                            <p id="carouselDescription">{item.description} <br /></p>
                         </div>
                     )
                 })}
