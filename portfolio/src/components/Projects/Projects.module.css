@@ -29,20 +29,23 @@
 }
 
 
-/* Celular em paisagem ( 576px - 767px ) */
-@media (min-width: 576px){
+/* Celular em paisagem ( max-height: 500px ) */
+@media (orientation: landscape) and (max-height: 500px){
 
 }
 
-/* Tablet ( 768px - 991px )*/
+
+/* Tablet ( 768px - 1279px )*/
 @media (min-width: 768px){
 
 }
 
-/* Tablet em paisagem ( 992px - 1199px ) */
-@media (min-width: 992px){
 
+/* Notebook e Tablet em paisagem ( 992px - 1199px )*/
+@media (min-width: 992px){
+    
 }
+
 
 /* Desktops */
 @media (min-width: 1200px){

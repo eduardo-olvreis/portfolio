@@ -135,6 +135,13 @@
     }
 }
 
+
+/* Celular em paisagem ( max-height: 500px ) */
+@media (orientation: landscape) and (max-height: 500px){
+
+}
+
+
 /* Tablets ( 768px - 991px ) */
 @media (min-width: 768px) {
 
@@ -177,16 +184,14 @@
     }
 }
 
-/* xl - Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+
+/* Notebook e Tablet em paisagem ( 992px - 1199px )*/
+@media (min-width: 992px){
     
 }
 
 
-
-/* Celular deitado */
-@media (orientation: landscape){
-    .logo{
-        width: 20%;
-    }
+/* Desktops */
+@media (min-width: 1200px) {
+    
 }

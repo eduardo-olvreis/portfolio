@@ -53,8 +53,9 @@
     }
 }
 
-/* Regra específica para dispositivos DEITADOS (landscape) */
-@media (orientation: landscape) {
+
+/* Celular em paisagem ( max-height: 500px ) */
+@media (orientation: landscape) and (max-height: 500px){
     .containerHero {
         min-height: 100svh;
         grid-template-areas: "text image";
@@ -65,12 +66,13 @@
     }
 }
 
-/* Tablet ( 768px - 1279px )*/
+
+/* Tablet ( 768px - 991px )*/
 @media (min-width: 768px){
 
     .text{  
         width: 80%;
-        
+
         /* Titulo do hero sem quebra de linha */
         & .quebraLinha, h2{
             display: block;
@@ -87,7 +89,14 @@
     }
 }
 
-/* Desktops (1280px +) */
-@media (min-width: 1280px){
+
+/* Notebook e Tablet em paisagem ( 992px - 1199px )*/
+@media (min-width: 992px){
+    
+}
+
+
+/* Desktops*/
+@media (min-width: 1200px){
 
 }
