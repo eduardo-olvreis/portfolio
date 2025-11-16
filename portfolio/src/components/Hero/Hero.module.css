@@ -10,7 +10,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     place-items: center;
-    min-height: 85svh;
+    min-height: calc(100vh - 15svh);
 
     & .containerImage{
         grid-area: image;
@@ -53,6 +53,10 @@
     }
 }
 
+.desktop{
+    display: none;
+}
+
 
 /* Celular em paisagem ( max-height: 500px ) */
 @media (orientation: landscape) and (max-height: 500px){
@@ -92,6 +96,36 @@
 
 /* Notebook e Tablet em paisagem ( 992px - 1199px )*/
 @media (min-width: 992px){
+
+    .containerHero {
+        display: flex;
+        align-items: center;
+        min-height: calc(100svh - 15svh);
+    }
+
+    .text{
+        width: 100%;
+        padding: 5%;
+        gap: 20px;
+
+        & p, h2{
+            margin-left: 0;
+            margin-top: 0;
+        }
+    }
+
+    .containerImage{
+        width: 100%;
+        padding: 2%;
+    }
+
+    .desktop{
+        display: inline;
+    }
+
+    .mobile{
+        display: none;
+    }
     
 }
 
