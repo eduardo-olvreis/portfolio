@@ -187,6 +187,22 @@
 
 /* Notebook e Tablet em paisagem ( 992px - 1199px )*/
 @media (min-width: 992px){
+
+    .containerHeader{
+        height: 100%;
+    }
+
+    .menuFixed{
+        gap: 7%;
+
+        & p{
+            font-size: var(--font-size-p);
+        }
+    }
+    
+    .logo{
+        width: 17%;
+    }
     
 }
 
