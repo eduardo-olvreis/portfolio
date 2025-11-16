@@ -20,7 +20,7 @@
         margin-bottom: 30px;
         color: var(--color-textImportant);
         font-family: "climateCrisis";
-        font-size: clamp(1.3rem, 5vw, 1.5rem);
+        font-size: var(--font-size-h2);
         line-height: 1.2;
         letter-spacing: 0.2rem;
         font-weight: 300;
@@ -43,6 +43,9 @@
         width: 15%;
         height: 15%;
     }
+}
+.contactItem p{
+    font-size: var(--font-size-p);
 }
 .imageContainer{
     width: 100%;
