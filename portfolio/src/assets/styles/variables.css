@@ -14,3 +14,10 @@
         --font-size-h2: 2rem
     }
 }
+
+/* Tablet Paisagem */
+@media (min-width: 992px){
+    :root{
+        --font-size-h2: 2.5rem
+    }
+}

@@ -20,7 +20,7 @@ export default function About(){
             </div>
             <div className={style.curriculum}>
                 <button onClick={buttonClick}>Meu Curriculo</button>
-                <img src="../src/assets/images/handImage.png" alt="Imagem de uma mão clicando no botão" />
+                <img src="../src/assets/images/handImage.png" alt="Imagem de uma mão clicando no botão" onClick={buttonClick}/>
             </div>
         </section>
     )

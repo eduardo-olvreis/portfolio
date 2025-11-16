@@ -53,10 +53,6 @@
     }
 }
 
-.desktop{
-    display: none;
-}
-
 
 /* Celular em paisagem ( max-height: 500px ) */
 @media (orientation: landscape) and (max-height: 500px){
@@ -119,13 +115,6 @@
         padding: 2%;
     }
 
-    .desktop{
-        display: inline;
-    }
-
-    .mobile{
-        display: none;
-    }
     
 }
 
