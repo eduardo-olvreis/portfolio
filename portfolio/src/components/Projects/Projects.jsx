@@ -28,7 +28,7 @@ const meusProjetos = [
     },
     {
         id: 4,
-        name: "Conversor de Moedas",
+        name: "Conversor",
         description: "Conversor de moedas em React, criado para praticar estados, formulários, eventos e consumo de dados externos.",
         image: "../src/assets/images/projects/conversorImage.svg",
         alt: "Imagem do projeto Conversor de Moedas",
