@@ -72,7 +72,31 @@
 
 /* Notebook e Tablet em paisagem ( 992px - 1199px )*/
 @media (min-width: 992px){
+
+    .list img{
+        width: 12%;
+        height: 12%;
+    }
+
+    .content{
+        padding-left: 18%;
+        padding-bottom: 15%;
+        gap: 30px;
+    }
+
+    .imageContainer{
+        width: 50%;
+    }
     
+    .imageContainer img{
+        width: 100%;
+    }
+
+    .container{
+        flex-direction: row;
+        align-items: end;
+    }
+
 }
 
 
