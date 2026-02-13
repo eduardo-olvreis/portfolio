@@ -5,7 +5,7 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("xkovjdgn");
 
   if (state.succeeded) {
-      return <p>Obrigado pelo contato! Responderei em breve.</p>;
+      return <p className={style.formP}>Obrigado pelo contato! Responderei em breve.</p>;
   }
 
   return (
@@ -39,12 +39,13 @@ export default function ContactForm() {
       />
 
       <label className={style.label} htmlFor="message">Mensagem</label>
-      <input
+      <textarea
         className={style.input}
         id="message"
         name="message"
         required
-      />
+        rows="1"
+      ></textarea>
       <ValidationError 
         prefix="Message" 
         field="message"
