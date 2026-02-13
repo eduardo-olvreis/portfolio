@@ -139,6 +139,36 @@
 /* Celular em paisagem ( max-height: 500px ) */
 @media (orientation: landscape) and (max-height: 500px){
 
+    .menu{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 30px;
+    }
+
+    .containerItens{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        & p{
+            padding: 10px;
+            font-size: 1rem;
+        }
+    }
+    
+    .containerIcones{
+        margin: 0;
+        gap: 15px;
+
+        & li{
+            width: 10%;
+        }
+    }
+
 }
 
 
@@ -152,8 +182,13 @@
     .botao{
         display: none;
     }
+    
+    .containerHeader{
+        height: 80px;
+        align-items: center;
+        padding-top: 0;
+    }
 
-    /* Deixar responsivo nas proximas atualizações */
     .logo{
         width: 150px;
     }
@@ -170,12 +205,12 @@
         justify-content: center;
         width: 100%;
         list-style: none;
-        gap: 30px;
+        gap: 5%;
 
         & p{
             text-align: start;
             font-family: "climateCrisis";
-            font-size: 1.3rem;
+            font-size: clamp(1.1rem, 1.8vw, 1.4rem);
             transition: all ease-in-out 0.2s;
         }
         & p:hover{
@@ -189,19 +224,20 @@
 @media (min-width: 992px){
 
     .containerHeader{
-        height: 15vh;
+        height: 90px;
+        min-height: 90px;
     }
 
     .menuFixed{
         gap: 7%;
 
         & p{
-            font-size: var(--font-size-p);
+            font-size: clamp(1.2rem, 1.5vw, 1.5rem);
         }
     }
     
     .logo{
-        width: 17%;
+        width: 150px;
     }
     
 }
@@ -210,4 +246,17 @@
 /* Desktops */
 @media (min-width: 1200px) {
     
+    .containerHeader{
+        padding: 0 5%;
+        height: 100px;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .menuFixed{
+        gap: 10%;
+    }
+
 }

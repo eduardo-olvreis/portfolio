@@ -13,14 +13,14 @@ export default function Header(){
     return( 
         <div className={style.containerHeader}>
             <div className={style.logo}>
-                <img src="../src/assets/images/logo.svg" alt="Portfólio Eduardo Reis" />
+                <a href="/"><img src="../src/assets/images/logo.svg" alt="Portfólio Eduardo Reis" /></a>
             </div>
             <nav className={style.containerMenu}>
                 {/* Menu fixado no header em resoluções maiores */}
                 <ul className={style.menuFixed}>
-                    <li><a href="#about-section"><p onClick={toggleMenu}>SOBRE MIM</p></a></li>
-                    <li><a href="#projects-section"><p onClick={toggleMenu}>PROJETOS</p></a></li>
-                    <li><a href="#contact-section"><p onClick={toggleMenu}>CONTATO</p></a></li>
+                    <li><a href="#about-section"><p>SOBRE MIM</p></a></li>
+                    <li><a href="#projects-section"><p>PROJETOS</p></a></li>
+                    <li><a href="#contact-section"><p>CONTATO</p></a></li>
                 </ul>
                 {/* Menu escondido no mobile */}
                 <ul className={`${style.menu} ${visivel? style.menuAberto : ""}`}>
@@ -28,6 +28,7 @@ export default function Header(){
                         <li><a href="#about-section"><p onClick={toggleMenu}>SOBRE MIM</p></a></li>
                         <li><a href="#projects-section"><p onClick={toggleMenu}>PROJETOS</p></a></li>
                         <li><a href="#contact-section"><p onClick={toggleMenu}>CONTATO</p></a></li>
+                        <li><a href="../../public/Curriculo.pdf" download="curriculo-eduardo-reis"><p onClick={toggleMenu}>CURRICULO</p></a></li>
                     </div>
                     <div className={style.containerIcones}>
                         <li><a href="https://www.linkedin.com/in/eduardo-olvreis/" target="__blank"><img src="../src/assets/images/icons/linkedin_Icon.svg" alt="Link para o meu Linkedin" /></a></li>
