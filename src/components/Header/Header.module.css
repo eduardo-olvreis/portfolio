@@ -172,6 +172,52 @@
 }
 
 
+/* Celulares Maiores e Pequenos Tablets (500px - 767px) */
+@media (min-width: 500px) and (max-width: 767px) {
+    /* Hide mobile menu */
+    .menu{
+        display: none;
+    }
+    .botao{
+        display: none;
+    }
+
+    /* Display fixed menu */
+    .menuFixed{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        gap: 5%;
+
+        & p{
+            text-align: start;
+            font-family: "climateCrisis";
+            font-size: clamp(1rem, 1.5vw, 1.2rem);
+            transition: all ease-in-out 0.2s;
+        }
+        & p:hover{
+            color: var(--color-textImportant);
+        }
+    }
+
+    .containerHeader{
+        height: 80px;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .logo{
+        width: 130px;
+    }
+
+    .containerMenu{
+        justify-content: center;
+        margin-bottom: 0;
+    }
+}
+
+
 /* Tablets ( 768px - 991px ) */
 @media (min-width: 768px) {
 
