@@ -1,6 +1,8 @@
 .slider-container {
-    margin-top:20px;
-    width: 61svw;
+    margin-top: 20px;
+    width: 85%;
+    max-width: 300px;
+    margin-inline: auto;
 }
 .slick-slide img{
     width: 100%;
