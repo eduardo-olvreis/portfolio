@@ -2,15 +2,17 @@
     --color-background :#302f3b;
     --color-text: #e1daca;
     --color-textImportant: #ff6d4d;
+
+    /* Tamanho base Mobile */
     --font-size-p: 1.1rem;
-    --font-size-h2: 1.5rem;
+    --font-size-h2: 1.4rem;
 }
 
 
 /* Tablet */
 @media (min-width: 768px){
     :root{
-        --font-size-p: 1.7rem;
+        --font-size-p: 1.25rem;
         --font-size-h2: 2rem
     }
 }
@@ -18,6 +20,15 @@
 /* Tablet Paisagem */
 @media (min-width: 992px){
     :root{
-        --font-size-h2: 2.5rem
+        --font-size-p: 1.35rem;
+        --font-size-h2: 2.2rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px){
+    :root{
+        --font-size-p: 1.5rem;
+        --font-size-h2: 2.5rem; /* Ajustado de 3rem para 2.5rem */
     }
 }

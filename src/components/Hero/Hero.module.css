@@ -208,13 +208,6 @@
 
     .text{
         flex: 1.2;
-
-        & h2{
-            font-size: 3rem;
-        }
-        & p{
-            font-size: 1.8rem;
-        }
     }
 
     .containerImage{
