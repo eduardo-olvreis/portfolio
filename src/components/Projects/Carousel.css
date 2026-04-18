@@ -61,3 +61,55 @@
 #carouselDescription, #carouselButton{
   font-size: var(--font-size-p);
 }
+
+@media (min-width: 992px) {
+  .slider-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .slide-wrapper {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+  }
+
+  .slide-image {
+    flex: 1;
+    max-width: 450px;
+  }
+
+  .slide-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #carouselButton {
+    width: fit-content;
+    padding: 15px 40px;
+    margin: 0 0 20px 0;
+    font-size: 1.2rem;
+  }
+
+  #carouselDescription {
+    text-align: left;
+    font-size: 1.25rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .slider-container .slick-next {
+    right: -50px;
+  }
+  .slider-container .slick-prev {
+    left: -50px;
+  }
+
+  .slider-container .slick-dots {
+    bottom: -45px;
+  }
+}

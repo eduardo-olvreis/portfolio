@@ -45,11 +45,24 @@
 
 /* Notebook e Tablet em paisagem ( 992px - 1199px )*/
 @media (min-width: 992px){
-    
+    .content {
+        margin: 0 auto;
+        align-items: center; 
+    }
+    .content h2 {
+        align-self: flex-start; 
+        margin-bottom: 3rem;
+    }
 }
-
 
 /* Desktops */
 @media (min-width: 1200px){
-    
+    .content {
+        margin: 0 auto;
+        align-items: center;
+        max-width: 1000px;
+    }
+    .content h2 {
+        align-self: flex-start;
+    }
 }

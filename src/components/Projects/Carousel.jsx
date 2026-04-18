@@ -22,10 +22,14 @@ export default function Carousel({ items }){
             <Slider {...settings}>
                 {items.map((item) => {
                     return(
-                        <div key={item.id}>
-                            <img src={item.image} alt={item.alt} />
-                            <button onClick={() => window.open(item.url, "_blank")} id="carouselButton">{item.name}</button>
-                            <p id="carouselDescription">{item.description} <br /></p>
+                        <div key={item.id} className="slide-wrapper">
+                            <div className="slide-image">
+                                <img src={item.image} alt={item.alt} />
+                            </div>
+                            <div className="slide-text">
+                                <button onClick={() => window.open(item.url, "_blank")} id="carouselButton">{item.name}</button>
+                                <p id="carouselDescription">{item.description}</p>
+                            </div>
                         </div>
                     )
                 })}
