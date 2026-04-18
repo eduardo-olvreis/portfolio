@@ -14,9 +14,11 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 70%;
+    width: 90%;
+    max-width: 800px;
     border-radius: 10px;
-    padding: 4%;
+    padding: 1% 0;
+    margin: 0 auto;
 
     & h2{
         color: var(--color-textImportant);
@@ -33,32 +35,35 @@
         margin-top: 1rem;
         font-size: var(--font-size-p);
         color: var(--color-text);
+        line-height: 1.5;
     }
 }
 
 /* Currículo */
 .curriculum{
-    width: 70%;
-    margin-top: 10px;
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 
     & button{   /* Botão para acessar o curriculo */
-        padding: 20px;
+        padding: 15px 25px;
         border: 3px var(--color-background) solid;
         border-radius: 10px;
-        margin-left: 10px;
         cursor: pointer;
         font-family: "pixel";
         color: var(--color-background);
         background-color: var(--color-textImportant);
+        position: relative;
     }
 
     & img{  /* Imagem da mão clicando no curriculo */
         rotate: -30deg;
-        width: 20%;
-        margin-left: -30px;
+        width: 60px;
+        margin-left: -20px;
+        margin-top: 15px;
         z-index: 3;
         cursor: pointer;
     }
@@ -73,43 +78,54 @@
 
 /* Tablet ( 768px - 991px )*/
 @media (min-width: 768px){
-
     .content p{
         margin-top: 2rem;
     }
 
     .curriculum{
-        padding: 3%;
         & button{
             font-size: var(--font-size-p);
             text-align: center;
         }
         
         & img{
-            width: 17%;
-            margin-left: -32px;
+            width: 65px;
+            margin-left: -25px;
         }
     }
-
 }
 
 
 /* Notebook e Tablet em paisagem ( 992px - 1199px )*/
 @media (min-width: 992px){
-    
     .curriculum{
-        margin-top: 0;
+        margin-top: 20px;
         padding-top: 0;
+        
+        & button {
+            font-size: 1.2rem;
+        }
 
         & img{
-            margin-left: -45px;
+            width: 70px;
+            margin-left: -25px;
         }
     }
-
 }
 
 
 /* Desktops */
 @media (min-width: 1200px){
-    
+    .content p{
+        margin-top: 2.5rem;
+    }
+
+    .curriculum{
+        margin-top: 30px;
+        
+        & img{
+             width: 80px;
+             margin-left: -30px;
+        }
+    }
 }

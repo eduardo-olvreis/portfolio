@@ -12,10 +12,9 @@ export default function About(){
                     SOBRE MIM
                 </h2>
                 <p>
-                    Sou estudante de Análise e Desenvolvimento de Sistemas no Infnet. Tenho me dedicado a aprender e desenvolver projetos com 
-                    <span className="textImportant"> HTML, CSS, JavaScript e React.</span>
+                    Desenvolvedor Full-Stack e estudante de Análise e Desenvolvimento de Sistemas Infnet. Atuo na arquitetura e desenvolvimento de soluções escaláveis de ponta a ponta.
                     <br /><br />
-                    Gosto de transformar ideias em soluções práticas e funcionais, criando interfaces que unem simplicidade, performance e boa experiência ao usuário.
+                    Minha stack principal é focada em <span className="textImportant">React, NestJS e C# (.NET)</span>. Construo desde APIs robustas e modelagem de banco de dados até interfaces front-end otimizadas e de alta performance.
                 </p>
             </div>
             <div className={style.curriculum}>
