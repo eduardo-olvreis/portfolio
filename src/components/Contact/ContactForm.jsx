@@ -1,11 +1,20 @@
 import { useForm, ValidationError } from '@formspree/react';
-import style from "./Contact.module.css"
+import style from "./Contact.module.css";
+import contactImage from "../../assets/images/contactImage.svg"
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xkovjdgn");
-
   if (state.succeeded) {
-      return <p className={style.formP}>Obrigado pelo contato! Responderei em breve.</p>;
+    return (
+      <div className={style.successWrapper}>
+        <p className={style.formP}>
+          Obrigado pelo contato! <span className="textImportant">Responderei em breve.</span>
+        </p>
+        <div className={style.imageContainerSuccess}>
+          <img src={contactImage} alt="Meu Avatar de sucesso" />
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -16,6 +25,7 @@ export default function ContactForm() {
         id="full-name"
         type="text" 
         name="name"
+        placeholder='Seu nome'
         required
       />
       <ValidationError 
@@ -29,6 +39,7 @@ export default function ContactForm() {
         className={style.input}
         id="email"
         type="email" 
+        placeholder='Seu email'
         name="email"
         required
       />
@@ -43,6 +54,7 @@ export default function ContactForm() {
         className={style.input}
         id="message"
         name="message"
+        placeholder='Digite sua mensagem...'
         required
         rows="4"
       ></textarea>

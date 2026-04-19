@@ -7,6 +7,10 @@ export default function Contact(){
             <div className={style.content}>
                 <div className={style.contactInfo}>
                     <h2>ENTRE EM <br />CONTATO</h2>
+                    <p className={style.subtext}>
+                        Gostaria de falar comigo? 
+                        <span className="textImportant"> Mande-me uma mensagem!</span>
+                    </p>
                     <ul className={style.list}>
                         <li className="contactItem"><a href="https://www.linkedin.com/in/eduardo-olvreis/" target="__blank"><img src="../src/assets/images/icons/linkedin_Icon.svg" alt="Link para o meu Linkedin" /><p>Eduardo Reis</p></a></li>
                         <li className="contactItem"><a href="https://github.com/eduardo-olvreis" target="__blank"><img src="../src/assets/images/icons/github_icon.svg" alt="Link para o meu GitHub" /><p>eduardo-olvreis</p></a></li>
