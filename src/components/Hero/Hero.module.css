@@ -1,6 +1,5 @@
 /* ESTILOS PADRÃO (MOBILE  0 - 576px) */
 
-/* Container do Hero */
 .containerHero{
     display: grid;
     grid-template-areas:
@@ -85,7 +84,6 @@
     }
 }
 
-
 /* Pequenos Tablets e Celulares Maiores (500px - 767px) */
 @media (min-width: 500px) and (max-width: 767px){
     .containerHero {
@@ -113,8 +111,7 @@
     }
 }
 
-
-/* Tablet ( 768px - 991px )*/
+/* Tablet Vertical ( 768px - 991px )*/
 @media (min-width: 768px){
     .containerHero {
         display: flex;
@@ -154,7 +151,6 @@
 }
 
 
-/* Notebook e Tablet em paisagem ( 992px - 1199px )*/
 @media (min-width: 992px){
 
     .containerHero {
@@ -162,34 +158,37 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        min-height: calc(100svh - 15svh);
-        gap: 40px;
-        padding: 0 8%; 
+        min-height: calc(90svh - 15svh); 
+        gap: 50px; /* Aumentado o espaço entre texto e imagem para preencher melhor */
+        padding: 0 5%; /* Diminuído o padding lateral para o conteúdo ter mais área útil */
     }
 
     .text{
-        flex: 1;
+        flex: 1.2;
         width: auto;
         padding: 0;
         align-items: flex-start;
 
         & h2{
             margin-top: 0;
-            font-size: var(--font-size-h2);
+            font-size: 2.2rem;
         }
         & p{
             margin-top: 1rem;
-            font-size: var(--font-size-p);
+            font-size: 1.2rem;
         }
     }
 
     .containerImage{
-        flex: 0.8;
+        flex: 1.2;
         width: auto;
         padding: 0;
+
+        & img {
+            max-width: 450px;
+            width: 100%;
+        }
     }
-
-
 }
 
 
@@ -200,6 +199,7 @@
         padding: 0 10%;
         max-width: 1400px;
         margin: 0 auto;
+        min-height: calc(100svh - 15svh);
     }
 
     .text{
@@ -207,6 +207,6 @@
     }
 
     .containerImage{
-        flex: 0.7;
+        flex: 1;
     }
 }

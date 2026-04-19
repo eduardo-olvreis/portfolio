@@ -268,30 +268,32 @@
 
 /* Notebook e Tablet em paisagem ( 992px - 1199px )*/
 @media (min-width: 992px){
-
     .containerHeader{
         height: 90px;
         min-height: 90px;
+        padding: 0 5%; 
+    }
+
+    .logo{
+        width: 180px; 
+    }
+    
+    .containerMenu{
+        justify-content: flex-end; 
     }
 
     .menuFixed{
-        gap: 7%;
-
+        justify-content: flex-end; 
+        gap: 5%;
         & p{
             font-size: clamp(1.2rem, 1.5vw, 1.5rem);
         }
     }
-    
-    .logo{
-        width: 150px;
-    }
-    
 }
 
 
 /* Desktops */
 @media (min-width: 1200px) {
-    
     .containerHeader{
         padding: 0 5%;
         height: 100px;
