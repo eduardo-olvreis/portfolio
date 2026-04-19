@@ -12,9 +12,9 @@ export default function Contact(){
                         <span className="textImportant"> Mande-me uma mensagem!</span>
                     </p>
                     <ul className={style.list}>
-                        <li className="contactItem"><a href="https://www.linkedin.com/in/eduardo-olvreis/" target="__blank"><img src="../src/assets/images/icons/linkedin_Icon.svg" alt="Link para o meu Linkedin" /><p>Eduardo Reis</p></a></li>
-                        <li className="contactItem"><a href="https://github.com/eduardo-olvreis" target="__blank"><img src="../src/assets/images/icons/github_icon.svg" alt="Link para o meu GitHub" /><p>eduardo-olvreis</p></a></li>
-                        <li className="contactItem"><a href="mailto:eduardo.olvreis@email.com"><img src="../src/assets/images/icons/email_icon.svg" alt="Link para o meu Email" /><p>eduardo.olvreis@gmail.com</p></a></li>
+                        <li className={style.contactItem}><a href="https://www.linkedin.com/in/eduardo-olvreis/" target="__blank"><img src="../src/assets/images/icons/linkedin_Icon.svg" alt="Link para o meu Linkedin" /><p>Eduardo Reis</p></a></li>
+                        <li className={style.contactItem}><a href="https://github.com/eduardo-olvreis" target="__blank"><img src="../src/assets/images/icons/github_icon.svg" alt="Link para o meu GitHub" /><p>eduardo-olvreis</p></a></li>
+                        <li className={style.contactItem}><a href="mailto:eduardo.olvreis@gmail.com"><img src="../src/assets/images/icons/email_icon.svg" alt="Link para o meu Email" /><p>eduardo.olvreis@gmail.com</p></a></li>
                     </ul>
                 </div>
                 <div className={style.formWrapper}>

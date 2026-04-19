@@ -67,7 +67,8 @@
 }
 
 .contactItem p{
-    font-size: var(--font-size-p);
+    font-size: clamp(0.85rem, 4vw, 1rem);
+    overflow-wrap: anywhere; 
 }
 
 /* Boneco Padrão (Mobile/Tablet) */
@@ -235,6 +236,8 @@
         width: 300px;
         max-width: 500px;
     }
+
+    
 }
 
 /* Desktops */
