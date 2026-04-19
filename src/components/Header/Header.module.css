@@ -4,12 +4,14 @@
 .containerHeader{
     grid-area: "header";
     background-color: var(--color-background);
-    z-index: 1000;
+    z-index: 1001;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 15svh;
     width: 100%;
+    position: sticky;
+    top: 0;
 
     & a{
         text-decoration: none;
@@ -20,6 +22,7 @@
 /* Logo */
 .logo{
     width: clamp(130px, 15vw, 300px);
+    z-index: 1002;
 
     & img{
         width: 100%;
@@ -54,6 +57,7 @@
     background-color: var(--color-background);
     border: none;
     outline: none;
+    z-index: 1001;
 }
 .botaoAberto{
     transform: rotateY(180deg);
@@ -84,15 +88,25 @@
     transform-origin: top;
     opacity: 0;
     transition: all 0.4s ease-in-out;
-    position: absolute;
-    top: 15svh;
+    
+    /* MUDANÇA: Agora ele cobre 100% da tela, do pixel zero até o fim */
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100svh; 
+    
+    /* ADICIONADO: Empurra as opções do menu para baixo do header */
+    padding-top: 15svh; 
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--color-background);
-    z-index: 3;
-    width: 100%;
-    height: 85svh; 
+    /* Fica atrás do header (1000), mas cobre o resto do site todo */
+    z-index: 999; 
+    overflow-y: auto; 
+    padding-bottom: 20px; 
 }
 .menuAberto{
     transform: scaleY(1);
@@ -229,14 +243,14 @@
         display: none;
     }
     
-    .containerHeader{
+.containerHeader{
         height: 80px;
         align-items: center;
-        padding-top: 0;
+        padding: 0 5%;
     }
 
     .logo{
-        width: 150px;
+        width: 160px;
     }
     
     /* Container do Menu fixado */

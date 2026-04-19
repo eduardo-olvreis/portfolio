@@ -6,15 +6,15 @@ export default function About(){
     }
     
     return(
-        <section id="about-section" className={style.containerAbout}>
-            <div className={style.content}>
+        <section className={style.containerAbout}>
+            <div className={style.content} id="about-section">
                 <h2>                   
                     SOBRE MIM
                 </h2>
                 <p>
-                    Desenvolvedor Full-Stack e estudante de Análise e Desenvolvimento de Sistemas Infnet. Atuo na arquitetura e desenvolvimento de soluções escaláveis de ponta a ponta.
+                    Sou desenvolvedor Full-Stack e estudante de Análise e Desenvolvimento de Sistemas. Iniciei minha trajetória em TI atuando com suporte, onde desenvolvi forte capacidade de análise e resolução de problemas reais.
                     <br /><br />
-                    Minha stack principal é focada em <span className="textImportant">React, NestJS e C# (.NET)</span>. Construo desde APIs robustas e modelagem de banco de dados até interfaces front-end otimizadas e de alta performance.
+                    Hoje, atuo no desenvolvimento de aplicações completas, do backend ao frontend, utilizando tecnologias como <span className="textImportant">C# (.NET), React, NestJS e MySQL</span>. Tenho foco em escrever código limpo, organizado e em construir sistemas eficientes e fáceis de usar.
                 </p>
             </div>
             <div className={style.curriculum}>

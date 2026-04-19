@@ -18,6 +18,7 @@
     max-width: 800px;
     border-radius: 10px;
     padding: 4%;
+    padding-bottom: 1%;
     margin: 0 auto;
 
     & h2{
@@ -27,7 +28,6 @@
         line-height: 1.2;
         letter-spacing: 0.2rem;
         font-weight: 300;
-        margin-bottom: 1rem;
     }
 
     & p{
@@ -80,6 +80,7 @@
 
     .content p{
         margin-top: 2rem;
+        font-size: 1.3rem;
     }
 
     .curriculum{
@@ -101,7 +102,7 @@
         margin-top: 0;
         margin-bottom: 0;
         min-height: auto;
-        padding: 80px 0;
+        padding: 50px 0;
     }
 
     .content {
@@ -110,7 +111,6 @@
     
     .curriculum{
         width: 80%;
-        margin-top: 20px;
         
         & button {
             font-size: 1.2rem;

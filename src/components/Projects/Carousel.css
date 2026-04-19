@@ -115,3 +115,40 @@
     bottom: -45px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider-container {
+    width: 80%; /* Aumenta a área do carrossel na tela */
+    max-width: 600px; /* Quebra a trava de 300px do celular */
+    margin-top: 40px;
+  }
+
+  .slide-wrapper {
+    display: flex !important;
+    flex-direction: column; /* Mantém a imagem em cima e texto embaixo */
+    gap: 20px;
+  }
+
+  .slide-image img {
+    border-radius: 15px; /* Deixa a borda um pouco mais suave já que a imagem cresceu */
+  }
+
+  #carouselButton {
+    padding: 15px;
+    font-size: 1.1rem; /* Aumenta a fonte do botão */
+    margin-top: 30px;
+  }
+
+  #carouselDescription {
+    font-size: 1.2rem; /* Aumenta a fonte da descrição para leitura melhor no tablet */
+    line-height: 1.5;
+  }
+
+  /* Afasta um pouco as setas para não ficarem grudadas na imagem maior */
+  .slider-container .slick-next {
+    right: -10%;
+  }
+  .slider-container .slick-prev {
+    left: -10%;
+  }
+}

@@ -1,14 +1,23 @@
-import { useState} from "react"
+import { useState, useEffect } from "react"
 import style from "./Header.module.css"
 
 export default function Header(){
-
-    //Abrir ou fechar o menu
     const [visivel, setVisivel] = useState(false)
 
     function toggleMenu(){
         setVisivel(!visivel)
     }
+    
+    useEffect(() => {
+        if (visivel) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [visivel]);
     
     return( 
         <div className={style.containerHeader}>
@@ -33,7 +42,7 @@ export default function Header(){
                     <div className={style.containerIcones}>
                         <li><a href="https://www.linkedin.com/in/eduardo-olvreis/" target="__blank"><img src="../src/assets/images/icons/linkedin_Icon.svg" alt="Link para o meu Linkedin" /></a></li>
                         <li><a href="https://github.com/eduardo-olvreis" target="__blank"><img src="../src/assets/images/icons/github_icon.svg" alt="Link para o meu GitHub" /></a></li>
-                        <li><a href="mailto:eduardo.olvreis@email.com"><img src="../src/assets/images/icons/email_icon.svg" alt="Link para o meu Email" /></a></li>
+                        <li><a href="mailto:eduardo.olvreis@gmail.com"><img src="../src/assets/images/icons/email_icon.svg" alt="Link para o meu Email" /></a></li>
                         <li><a href="https://wa.me/5551994412790"><img src="../src/assets/images/icons/whatsap_icon.svg" alt="Link para o meu Celular" /></a></li>
                     </div>
                 </ul>
