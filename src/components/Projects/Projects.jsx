@@ -2,50 +2,50 @@ import Carousel from "./Carousel"
 import style from "./Projects.module.css"
 
 const meusProjetos = [
-    {   // Alma Joias 
+    {
         id: 1,
+        name: "Notas Fiscais",
+        description: <>Sistema de emissão de notas fiscais desenvolvido como desafio técnico, focado em regras de negócio reais com back-end em <span className="textImportant">C# (.NET)</span> e interface em <span className="textImportant">Angular</span>.</>,
+        image: "../src/assets/images/projects/notasfiscaisImage.svg",
+        alt: "Imagem do projeto de Emissão de Notas Fiscais",
+        url: "https://github.com/eduardo-olvreis/Korp_Teste_EduardoReis"
+    },
+    {
+        id: 2,
+        name: "CRMed",
+        description: <>Sistema de gestão de clínicas full-stack, desenvolvido em equipe utilizando <span className="textImportant">React</span> no front-end, <span className="textImportant">NestJS</span> na API e banco <span className="textImportant">MySQL</span>.</>,
+        image: "../src/assets/images/projects/crmedImage.svg",
+        alt: "Imagem do projeto CRMed",
+        url: "https://github.com/Grupo-02-Turma-JavaScript-10/projeto_integrador_crm_clinica/tree/main/src"
+    },
+    {
+        id: 3,
+        name: "LearnFlix",
+        description: <>Plataforma de gestão acadêmica estilo LMS, desenvolvida para simplificar a administração escolar com painéis dinâmicos, autenticação e consumo de API via <span className="textImportant">React</span>.</>,
+        image: "../src/assets/images/projects/learnflixImage.svg",
+        alt: "Imagem do projeto LearnFlix",
+        url: "https://github.com/eduardo-olvreis/LearnFlix"
+    },
+    { 
+        id: 4,
         name: "Alma Joias",
-        description: "E-commerce e catálogo da Alma Joias, criado com layout limpo, responsivo e navegação simples.",
-        image: "../src/assets/images/projects/almaImage.svg",
+        description: <>E-commerce responsivo atualmente em processo de escalabilidade para uma arquitetura full-stack (<span className="textImportant">React</span> e <span className="textImportant">C#</span>), visando integrar sistema completo de autenticação, carrinho e pagamentos.</>,
+        image: "../src/assets/images/projects/almajoiasImage.svg",
         alt: "Imagem do projeto Alma Joias",
         url: "https://github.com/eduardo-olvreis/projeto-alma-joias"
     },
     {
-        id: 2,
+        id: 5,
         name: "Portfólio",
-        description: "O próprio site, desenvolvido em React como SPA, mostrando uma interface dinâmica e responsiva.",
+        description: <>O próprio site, desenvolvido em <span className="textImportant">React</span> como SPA, mostrando uma interface dinâmica e responsiva.</>,
         image: "../src/assets/images/projects/portfolioImage.svg",
         alt: "Imagem do projeto portfólio",
         url: "https://github.com/eduardo-olvreis/portfolio"
     },
     {
-        id: 3,
-        name: "Shopping Cart",
-        description: "Carrinho de compras funcional em React, desenvolvido para praticar estados, props e estilização com CSS Modules.",
-        image: "../src/assets/images/projects/shoppingcartImage.svg",
-        alt: "Imagem do projeto shopping cart",
-        url: "https://github.com/eduardo-olvreis/shopping-cart-exercise"
-    },
-    {
-        id: 4,
-        name: "Conversor",
-        description: "Conversor de moedas em React, criado para praticar estados, formulários, eventos e consumo de dados externos.",
-        image: "../src/assets/images/projects/conversorImage.svg",
-        alt: "Imagem do projeto Conversor de Moedas",
-        url: "https://github.com/eduardo-olvreis/currency-converter-exercise"
-    },
-    {
-        id: 5,
-        name: "Calculadora",
-        description: "Uma calculadora funcional, desenvolvida como meu primeiro projeto para aprendizado em HTML, CSS e JavaScript.",
-        image: "../src/assets/images/projects/calculatorImage.svg",
-        alt: "Imagem do projeto Calculadora",
-        url: "https://github.com/eduardo-olvreis/calculadora-js"
-    },
-    {
         id: 6,
         name: "Task List",
-        description: "Lista de tarefas em HTML, CSS e JavaScript, focada na manipulação do DOM e em uma interface intuitiva.",
+        description: <>Lista de tarefas em <span className="textImportant">HTML, CSS e JavaScript</span>, focada na manipulação do DOM e em uma interface intuitiva.</>,
         image: "../src/assets/images/projects/tasklistImage.svg",
         alt: "Imagem do projeto Task List",
         url: "https://github.com/eduardo-olvreis/task-list-js"
