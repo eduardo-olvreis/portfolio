@@ -10,10 +10,10 @@
 
 
 /* Tablet */
-@media (min-width: 768px){
-    :root{
-        --font-size-p: 1.25rem;
-        --font-size-h2: 2rem
+@media (min-width: 768px) {
+    :root {
+        --font-size-p: 1.2rem; 
+        --font-size-h2: 2.2rem;
     }
 }
 

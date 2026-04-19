@@ -30,16 +30,13 @@
     }
 }
 
-
-/* Celular em paisagem ( max-height: 500px ) */
-@media (orientation: landscape) and (max-height: 500px){
-
-}
-
-
-/* Tablet ( 768px - 1279px )*/
-@media (min-width: 768px){
-
+@media (min-width: 992px) {
+    .slider-container {
+        max-width: 500px; 
+    }
+    .slide-wrapper {
+        gap: 30px;
+    }
 }
 
 
