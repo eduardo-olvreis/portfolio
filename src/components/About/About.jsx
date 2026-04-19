@@ -3,7 +3,7 @@ import handImage from "../../assets/images/handImage.png"
 
 export default function About(){
     function buttonClick(){
-        window.open("../public/Curriculo.pdf", "_blank")
+        window.open("/Curriculo.pdf", "_blank")
     }
     
     return(
