@@ -1,4 +1,5 @@
 import style from "./About.module.css"
+import handImage from "../src/assets/images/handImage.png"
 
 export default function About(){
     function buttonClick(){
@@ -19,7 +20,7 @@ export default function About(){
             </div>
             <div className={style.curriculum}>
                 <button onClick={buttonClick}>Meu Curriculo</button>
-                <img src="../src/assets/images/handImage.png" alt="Imagem de uma mão clicando no botão" onClick={buttonClick}/>
+                <img src={handImage} alt="Imagem de uma mão clicando no botão" onClick={buttonClick}/>
             </div>
         </section>
     )

@@ -1,4 +1,5 @@
 import style from "./Hero.module.css"
+import heroImage from "../../assets/images/heroImage.svg"
 
 export default function Hero(){
     return(
@@ -12,7 +13,7 @@ export default function Hero(){
                 </p>
             </div>
             <div className={style.containerImage}>
-                <img src="../src/assets/images/heroImage.svg" alt="Imagem de um computador antigo com a minha logo" />
+                <img src={heroImage} alt="Imagem de um computador antigo com a minha logo" />
             </div>
         </div>
     )
