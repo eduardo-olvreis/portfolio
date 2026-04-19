@@ -44,7 +44,7 @@ export default function ContactForm() {
         id="message"
         name="message"
         required
-        rows="1"
+        rows="4"
       ></textarea>
       <ValidationError 
         prefix="Message" 

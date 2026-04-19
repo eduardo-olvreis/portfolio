@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .content{
     display: flex;
     flex-direction: column;
@@ -26,6 +27,18 @@
         font-weight: 300;
     }
 }
+
+/* Colunas (Mobile) */
+.contactInfo {
+    width: 100%;
+    margin-bottom: 40px; 
+}
+
+.formWrapper {
+    width: 100%;
+}
+
+/* Redes Sociais */
 .list{
     list-style: none;
     display: flex;
@@ -36,37 +49,43 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 15px; 
     }
 
     & img{
-        width: 15%;
-        height: 15%;
+        width: 45px; 
+        height: auto;
     }
 }
+
 .contactItem p{
     font-size: var(--font-size-p);
 }
+
 .imageContainer{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; 
+    margin-top: 20px; 
+}
 
-    & img{
-        width: 60%;
-    }
+.imageContainer img{
+    width: 60%;
+    max-width: 250px;
 }
 
 /* ContactForm */
 .formP{
     margin-bottom: 25px;
 }
+
 .formContainer{
     display: flex;
     flex-direction: column;
     gap: 5px;
     width: 100%;
 }
+
 .input{
     width: 100%;
     border-radius: 5px;
@@ -76,9 +95,11 @@
     margin-bottom: 15px;
     box-sizing: border-box; 
 }
+
 .label{
     color: var(--color-text);
 }
+
 .button{
     margin-bottom: 20px;
     padding: 15px;
@@ -92,57 +113,70 @@
     font-size: 14px;
 }
 
-/* Celular em paisagem ( max-height: 500px ) */
-@media (orientation: landscape) and (max-height: 500px){
-    
-}
-
-
-/* Tablet ( 768px - 991px )*/
+/* Tablet ( 768px - 899px )*/
 @media (min-width: 768px){
     .formContainer{
         max-width: 500px;
-        margin: 0 auto;
+        margin: 0;
     }
 }
 
-
-/* Notebook e Tablet em paisagem ( 992px - 1199px )*/
-@media (min-width: 992px){
-
-    .list img{
-        width: 12%;
-        height: 12%;
-    }
-
-    .content{
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-bottom: 5%;
-        width: 80%;
-        gap: 30px;
-    }
-
+@media (min-width: 900px){
     .imageContainer{
         display: none;
     }
-    
-    .container{
-        flex-direction: row;
-        align-items: center;
-        margin-top: 10svh;
-    }
 }
 
+/* Notebook e Tablet em paisagem ( 992px - 1199px )*/
+@media (min-width: 992px){
+    .container{
+        margin-top: 10svh;
+        min-height: calc(100svh - 10svh);
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 85%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+        gap: 60px;
+    }
+
+    .contactInfo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list img{
+        width: 40px;
+        height: auto;
+    }
+
+    .formWrapper {
+        flex: 1.2;
+        width: 100%;
+    }
+
+    .formContainer {
+        max-width: 100%;
+        margin: 0;
+    }
+}
 
 /* Desktops */
 @media (min-width: 1200px){
     .content{
-        width: 60%;
+        max-width: 1100px;
+        gap: 100px;
     }
 
     .input, .button {
-        padding: 20px;
-        font-size: 16px;
+        padding: 15px;
+        font-size: 1.1rem;
     }
 }
