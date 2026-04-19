@@ -73,4 +73,5 @@ Este portfólio faz parte da minha jornada como desenvolvedor Full Stack, com fo
 Se quiser trocar uma ideia ou falar sobre oportunidades:
 
 🔗 LinkedIn: https://www.linkedin.com/in/eduardo-olvreis/
+
 📧 Email: eduardo.olvreis@gmail.com
