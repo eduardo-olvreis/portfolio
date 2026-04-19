@@ -1,5 +1,5 @@
 import style from "./About.module.css"
-import handImage from "../src/assets/images/handImage.png"
+import handImage from "../../assets/images/handImage.png"
 
 export default function About(){
     function buttonClick(){
